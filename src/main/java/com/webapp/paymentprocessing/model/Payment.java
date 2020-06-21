@@ -24,9 +24,6 @@ public class Payment {
     private boolean active;
     private Double fee;
 
-// todo
-//    @Where(clause="Type.TYPE1",
-//            basic=@Basic(optional=false))
     private String details;
 
     private String creditorBankBicCode;

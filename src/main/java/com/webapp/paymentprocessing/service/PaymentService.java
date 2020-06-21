@@ -38,7 +38,9 @@ public class PaymentService {
         paymentRepository.save(payment);
     }
 
+    //building detailed specifications for payments querying task
     public List<Payment> getFilters(PaymentSearch search){
+
         return paymentRepository.findAll(new Specification<Payment>() {
             @Override
             public Predicate toPredicate(Root<Payment> root, CriteriaQuery<?> cq, CriteriaBuilder cb) {
